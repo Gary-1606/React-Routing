@@ -19,9 +19,9 @@ const App = () => {
             <br/>
             <Switch>
                 <Route path="/posts/:id" component={PostItem}/>
-                <Route path="/posts" exact component={Posts}/>
-                <Route path="/profile" exact component={Profile}/>
-                <Route path="/" exact component={Home}/>
+                <Route path="/posts" component={Posts}/>
+                <Route path="/profile" component={Profile}/>
+                <Route path="/" component={Home}/>
             </Switch>
         </BrowserRouter>
     )
