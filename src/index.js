@@ -22,6 +22,7 @@ const App = () => {
                 <Route path="/posts" component={Posts}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/" component={Home}/>
+                <Route render={()=> <h3>OOPS!! Page not found</h3>} />
             </Switch>
         </BrowserRouter>
     )

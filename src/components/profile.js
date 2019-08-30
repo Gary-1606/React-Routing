@@ -1,8 +1,18 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-const Profile = () => {
+const Profile = (props) => {
+
+    const redirectUser = () => {
+        props.history.push('/');
+    }
     return (
-        <div> Profile </div>
+        <>
+            <button onClick= { () => redirectUser() }>Redirect to Home</button>
+            <Link to={{
+                pathname: `${props.match.url}/posts`
+            }}>Go to posts</Link>
+        </>
     )
 }
 
